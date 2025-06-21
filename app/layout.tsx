@@ -1,11 +1,16 @@
 import "./globals.css"
 import { ppEditorialNewUltralightItalic, inter } from "./fonts"
 import type React from "react"
+import type { Metadata } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Luma Digital",
   description: "Solusi teknologi inovatif untuk era digital",
-  generator: 'Next.js'
+  generator: 'Next.js',
+  viewport: 'width=device-width, initial-scale=1',
+  icons: {
+    icon: '/placeholder.svg',
+  },
 }
 
 export default function RootLayout({
@@ -15,10 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ppEditorialNewUltralightItalic.variable} ${inter.variable}`}>
-      <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-      </head>
       <body suppressHydrationWarning className={inter.className}>{children}</body>
     </html>
   )

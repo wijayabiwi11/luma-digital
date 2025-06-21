@@ -22,6 +22,16 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
+  // Konfigurasi routing
+  trailingSlash: false,
+  skipTrailingSlashRedirect: true,
+  // Konfigurasi build
+  swcMinify: true,
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
+  },
 }
 
 export default nextConfig
