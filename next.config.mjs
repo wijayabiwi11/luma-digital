@@ -18,6 +18,17 @@ const nextConfig = {
   devIndicators: {
     position: "bottom-right",
   },
+  // Mengoptimalkan asset statis
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/_next' : '',
+  // Mengizinkan video dan gambar besar
+  experimental: {
+    largePageDataBytes: 128 * 100000, // 12.8MB
+  },
+  // Mengoptimalkan loading
+  optimizeFonts: true,
+  compress: true,
+  poweredByHeader: false,
+  generateEtags: true,
 }
 
 export default nextConfig
