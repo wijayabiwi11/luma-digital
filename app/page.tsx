@@ -50,7 +50,7 @@ export default function Home() {
               className="w-8 h-8 relative opacity-80 hover:opacity-100 transition-opacity"
             >
               <Image
-                src="/placeholder-logo.svg"
+                src="/placeholder.svg"
                 alt="Luma Logo"
                 fill
                 className="object-contain"
