@@ -8,9 +8,12 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    domains: ['vercel.app']
   },
-  // Menonaktifkan strict mode untuk menghindari masalah hydration
-  reactStrictMode: false,
+  // Mengaktifkan strict mode untuk production
+  reactStrictMode: true,
+  // Output sebagai standalone untuk Vercel
+  output: 'standalone',
   // Konfigurasi development indicator yang benar
   devIndicators: {
     position: "bottom-right",
