@@ -1,5 +1,3 @@
-"use client"
-
 import "./globals.css"
 import { ppEditorialNewUltralightItalic, inter } from "./fonts"
 import type React from "react"
