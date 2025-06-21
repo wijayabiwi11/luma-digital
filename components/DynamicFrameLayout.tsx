@@ -6,6 +6,17 @@ import { FrameComponent } from "./FrameComponent"
 import { Slider } from "@/components/ui/slider"
 import { Button } from "@/components/ui/button"
 
+// Import video
+import productVideo from "../public/videos/Product Video.mp4"
+import artDirectionVideo from "../public/videos/Art Direction Exported.mp4"
+import illustrationVideo from "../public/videos/Illustration Exported (1).mp4"
+import animationVideo from "../public/videos/Animation Exported (4).mp4"
+import logoVideo from "../public/videos/Logo Exported.mp4"
+import webVideo from "../public/videos/Exported Web Video.mp4"
+import jitterVideo from "../public/videos/Jitter Exported Poster.mp4"
+import webglVideo from "../public/videos/WebGL Exported (1).mp4"
+import companyVideo from "../public/videos/Company Thing Exported.mp4"
+
 const GRID_SIZE = 12
 const CELL_SIZE = 60 // pixels per grid cell
 
@@ -24,7 +35,7 @@ interface Frame {
 const initialFrames: Frame[] = [
   {
     id: 1,
-    video: "/videos/Product Video.mp4",
+    video: productVideo,
     defaultPos: { x: 0, y: 0, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -35,7 +46,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 2,
-    video: "/videos/Art Direction Exported.mp4",
+    video: artDirectionVideo,
     defaultPos: { x: 4, y: 0, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -46,7 +57,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 3,
-    video: "/videos/Illustration Exported (1).mp4",
+    video: illustrationVideo,
     defaultPos: { x: 8, y: 0, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -57,7 +68,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 4,
-    video: "/videos/Animation Exported (4).mp4",
+    video: animationVideo,
     defaultPos: { x: 0, y: 4, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -68,7 +79,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 5,
-    video: "/videos/Logo Exported.mp4",
+    video: logoVideo,
     defaultPos: { x: 4, y: 4, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -79,7 +90,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 6,
-    video: "/videos/Exported Web Video.mp4",
+    video: webVideo,
     defaultPos: { x: 8, y: 4, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -90,7 +101,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 7,
-    video: "/videos/Jitter Exported Poster.mp4",
+    video: jitterVideo,
     defaultPos: { x: 0, y: 8, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -101,7 +112,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 8,
-    video: "/videos/WebGL Exported (1).mp4",
+    video: webglVideo,
     defaultPos: { x: 4, y: 8, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -112,7 +123,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 9,
-    video: "/videos/Company Thing Exported.mp4",
+    video: companyVideo,
     defaultPos: { x: 8, y: 8, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",

@@ -19,7 +19,7 @@ const nextConfig = {
     position: "bottom-right",
   },
   // Mengoptimalkan asset statis
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/_next' : '',
+  assetPrefix: '',
   // Mengizinkan video dan gambar besar
   experimental: {
     largePageDataBytes: 128 * 100000, // 12.8MB
@@ -29,6 +29,26 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
+  // Konfigurasi untuk asset statis
+  distDir: '.next',
+  publicRuntimeConfig: {
+    staticFolder: '/public',
+  },
+  // Konfigurasi webpack untuk video
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(mp4|webm|ogg)$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          publicPath: '/_next/static/media',
+          outputPath: 'static/media',
+          name: '[name].[hash].[ext]',
+        },
+      },
+    })
+    return config
+  },
 }
 
 export default nextConfig
