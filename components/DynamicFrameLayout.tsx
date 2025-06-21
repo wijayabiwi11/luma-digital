@@ -35,7 +35,7 @@ interface Frame {
 const initialFrames: Frame[] = [
   {
     id: 1,
-    video: productVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Product_Video",
     defaultPos: { x: 0, y: 0, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -46,7 +46,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 2,
-    video: artDirectionVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Art_Direction_Exported",
     defaultPos: { x: 4, y: 0, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -57,7 +57,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 3,
-    video: illustrationVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Illustration_Exported_1",
     defaultPos: { x: 8, y: 0, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -68,7 +68,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 4,
-    video: animationVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Animation_Exported_4",
     defaultPos: { x: 0, y: 4, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -79,7 +79,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 5,
-    video: logoVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Logo_Exported",
     defaultPos: { x: 4, y: 4, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -90,7 +90,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 6,
-    video: webVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Exported_Web_Video",
     defaultPos: { x: 8, y: 4, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -101,7 +101,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 7,
-    video: jitterVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Jitter_Exported_Poster",
     defaultPos: { x: 0, y: 8, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -112,7 +112,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 8,
-    video: webglVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/WebGL_Exported_1",
     defaultPos: { x: 4, y: 8, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
@@ -123,7 +123,7 @@ const initialFrames: Frame[] = [
   },
   {
     id: 9,
-    video: companyVideo,
+    video: "https://res.cloudinary.com/lumadigital/video/upload/v1/videos/Company_Thing_Exported",
     defaultPos: { x: 8, y: 8, w: 4, h: 4 },
     corner: "/placeholder.svg",
     edgeHorizontal: "/placeholder.svg",
