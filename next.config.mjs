@@ -27,10 +27,16 @@ const nextConfig = {
   skipTrailingSlashRedirect: true,
   // Konfigurasi build
   swcMinify: true,
-  experimental: {
-    serverActions: {
-      bodySizeLimit: '2mb',
-    },
+  // Konfigurasi pages
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+  // Konfigurasi rewrites
+  async rewrites() {
+    return [
+      {
+        source: '/404',
+        destination: '/_not-found',
+      },
+    ]
   },
 }
 
