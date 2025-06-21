@@ -8,13 +8,6 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['vercel.app', 'res.cloudinary.com'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-      },
-    ],
   },
   // Mengaktifkan strict mode untuk production
   reactStrictMode: true,

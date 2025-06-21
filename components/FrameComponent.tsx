@@ -1,6 +1,6 @@
 "use client"
 import { Slider } from "@/components/ui/slider"
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 
 interface FrameComponentProps {
@@ -38,18 +38,7 @@ export function FrameComponent({
   showControls,
   label,
 }: FrameComponentProps) {
-  const isVideo = video.endsWith('.mp4') || video.endsWith('.webm') || video.endsWith('.mov')
   const [error, setError] = useState(false)
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  useEffect(() => {
-    if (isVideo && videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Autoplay failed, mungkin karena kebijakan browser
-        console.log("Autoplay failed, waiting for user interaction")
-      })
-    }
-  }, [isVideo])
 
   const handleError = () => {
     console.error(`Failed to load media: ${video}`)
@@ -66,7 +55,7 @@ export function FrameComponent({
       }}
     >
       <div className="relative w-full h-full overflow-hidden">
-        {/* Video/Image with Border */}
+        {/* Image with Border */}
         <div
           className="absolute inset-0 flex items-center justify-center"
           style={{
@@ -89,17 +78,6 @@ export function FrameComponent({
               <div className="w-full h-full flex items-center justify-center bg-gray-900 text-white/50">
                 Failed to load media
               </div>
-            ) : isVideo ? (
-              <video
-                ref={videoRef}
-                className="w-full h-full object-cover"
-                src={video}
-                loop
-                muted
-                playsInline
-                onError={handleError}
-                controls={false}
-              />
             ) : (
               <div className="relative w-full h-full">
                 <Image
